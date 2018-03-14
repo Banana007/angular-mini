@@ -2,12 +2,11 @@ import {Component} from '@angular/core';
 
 @Component({
   /**
-   * два обязательный свойста
+   * необходимо передать базавую конфигурацию в компонент, он имеет 2 обязательных свойства
    */
-    selector: 'app-user',
-    templateUrl: './user.component.html'
-
+    selector: 'app-user', // уникальный ключ(название уникального тега, который будет определять данный компонент),
+                          // с помощью которого можно будет обращаться к данному компоненту
+    templateUrl: './user.component.html', // шаблон(опеделяется 2мя способами) - относительный путь где лежит шаблон данного компонента
+    styleUrls: ['./user.component.scss']
 })
-export class UserComponent{
-
-}
+export class UserComponent{}
