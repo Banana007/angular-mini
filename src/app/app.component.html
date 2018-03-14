@@ -3,13 +3,10 @@
 
   <div class="row">
 
-    <app-user></app-user>
-
-    <app-user></app-user>
-
-    <app-user></app-user>
-
-    <app-user></app-user>
+    <app-user
+      *ngFor="let item of users"
+      [user]="item"
+    ></app-user>
 
   </div>
 

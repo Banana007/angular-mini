@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   /**
@@ -9,4 +9,8 @@ import {Component} from '@angular/core';
     templateUrl: './user.component.html', // шаблон(опеделяется 2мя способами) - относительный путь где лежит шаблон данного компонента
     styleUrls: ['./user.component.scss']
 })
-export class UserComponent{}
+export class UserComponent{
+
+  @Input() user;
+
+}
